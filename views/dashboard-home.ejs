@@ -1,0 +1,109 @@
+<% include partials/header.ejs %>
+
+<body class="nav-md">
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+                <div class="navbar nav_title" style="border: 0;">
+                    <a href="/dashboard/home" class="site_title"><i class="fa fa-archive"></i> <span>DU Repository</span></a>
+                </div>
+                <div class="clearfix"></div>
+                <% include partials/menu-profile.ejs %>
+                <br>
+                <% include partials/nav.ejs %>
+                <% include partials/sidebar-footer.ejs %>
+            </div>
+        </div>
+        <% include partials/top-nav.ejs %>
+        <div class="right_col" role="main">
+            <div id="message"></div>
+            <div class="">
+                <div class="row top_tiles">
+                    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                            <div class="icon"><i class="fa fa-archive"></i></div>
+                            <div class="count" id="published-collection-count">...</div>
+                            <h3>Published<br>Collections</h3>
+                            <p id="loading-published-collection-count"><strong>Loading...</strong></p>
+                        </div>
+                    </div>
+                    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                            <div class="icon"><i class="fa fa-archive"></i></div>
+                            <div class="count" id="total-collection-count">...</div>
+                            <h3>Total<br>Collections</h3>
+                            <p id="loading-total-collection-count"><strong>Loading...</strong></p>
+                        </div>
+                    </div>
+                    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                            <div class="icon"><i class="fa fa-file"></i></div>
+                            <div class="count" id="published-object-count">...</div>
+                            <h3>Published<br>Objects</h3>
+                            <p id="loading-published-object-count"><strong>Loading...</strong></p>
+                        </div>
+                    </div>
+                    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                            <div class="icon"><i class="fa fa-file"></i></div>
+                            <div class="count" id="total-object-count">...</div>
+                            <h3>Total<br>Objects</h3>
+                            <p id="loading-total-object-count"><strong>Loading...</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row top_tiles">
+                    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                            <div class="icon"><i class="fa fa-file-image-o"></i></div>
+                            <div class="count" id="total-image-count">...</div>
+                            <h3>Total<br>Images</h3>
+                            <p id="loading-image-count"><strong>Loading...</strong></p>
+                        </div>
+                    </div>
+                    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                            <div class="icon"><i class="fa fa-file-pdf-o"></i></div>
+                            <div class="count" id="total-pdf-count">...</div>
+                            <h3>Total<br>PDFs</h3>
+                            <p id="loading-pdf-count"><strong>Loading...</strong></p>
+                        </div>
+                    </div>
+                    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                            <div class="icon"><i class="fa fa-file-audio-o"></i></div>
+                            <div class="count" id="total-audio-count">...</div>
+                            <h3>Total<br>Audio</h3>
+                            <p id="loading-audio-count"><strong>Loading...</strong></p>
+                        </div>
+                    </div>
+                    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                            <div class="icon"><i class="fa fa-file-video-o"></i></div>
+                            <div class="count" id="total-video-count">...</div>
+                            <h3>Total<br>Videos</h3>
+                            <p id="loading-video-count"><strong>Loading...</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% include partials/footer.ejs %>
+    </div>
+</div>
+<script src="../vendors/jquery/dist/jquery.min.js"></script>
+<script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../vendors/nprogress/nprogress.js"></script>
+<script src="../js/dompurify/purify.min.js"></script>
+<script src="../assets/js/theme_sidebar.js"></script>
+<script src="../app/dom.module.js"></script>
+<script src="../app/config.module.js"></script>
+<script src="../app/helper.module.js"></script>
+<script src="../app/http.module.js"></script>
+<script src="../app/user.module.js"></script>
+<script src="../app/home.module.js"></script>
+<script src="../app/stats.module.js"></script>
+</body>
+</html>
