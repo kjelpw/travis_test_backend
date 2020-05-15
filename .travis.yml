@@ -5,9 +5,8 @@ node_js:
 services:
   - mysql
 before_install:
-  - mysql -e 'CREATE DATABASE repo; repo < db/repo.txt; CREATE DATABASE repo_queue; repo_queue < db/repo_queue.txt;'
+  - mysql -e 'CREATE DATABASE repo;'
 install:
   - npm install
 script:
 - echo "skipping tests"
-- node repo.js
