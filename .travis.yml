@@ -1,7 +1,12 @@
 language: node_js
 node_js:
   - 7
+services:
+  - mysql
+before_install:
+  - mysql -e 'CREATE DATABASE myapp_test;'
 install:
   - npm install
 script:
 - echo "skipping tests"
+- node repo.js
