@@ -13,3 +13,4 @@ install:
   - npm install
 script:
 - echo "skipping tests"
+- node repo.js
