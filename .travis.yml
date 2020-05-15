@@ -7,6 +7,8 @@ services:
 before_install:
   - mysql -e 'CREATE DATABASE repo;'
   - mysql -u travis repo < db/repo.txt
+  - mysql -e 'CREATE DATABASE repo_queue;'
+  - mysql -u travis repo_queue < db/repo_queue.txt
 install:
   - npm install
 script:
